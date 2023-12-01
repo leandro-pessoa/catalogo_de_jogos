@@ -13,7 +13,7 @@ O projeto consiste em um CRUD (Create, Read, Update, Delete) responsivo feito co
 
  ## ⬇️ Download do projeto
 
- Para baixar o projeto clique <a href='<a href='' download>aqui</a>
+ Para baixar o projeto clique <a href='https://github.com/leandro-pessoa/catalogo_de_jogos/archive/refs/heads/main.zip' download>aqui</a>.
 
  ## 🛠️ Executando o projeto
 
