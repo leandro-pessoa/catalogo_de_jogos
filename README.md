@@ -22,6 +22,12 @@ O projeto consiste em um CRUD (Create, Read, Update, Delete) responsivo feito co
  - Server local habilitado (Ex.: Wampserver)
  - MySQL conectado ao server
 
+Instale o pacote @vitejs/plugin-react na pasta 'frontend':
+
+~~~~
+npm install @vitejs/plugin-react --save-dev
+~~~~
+
 Agora, execute na pasta 'backend' o comando:
 
 ~~~~
@@ -35,6 +41,21 @@ npm run dev
 ~~~~
 
 Por fim, abra o localhost na porta especificada no seu navegador.
+
+## Tecnologias utilizadas
+
+Aqui estão as principais tecnologias utilizadas
+
+- `React`
+- `NodeJS`
+- `Express`
+- `Mysql`
+- `Typescript`
+- `Axios`
+
+## Desenvolvedor
+
+Desenvolvido por [Leandro Pessoa](https://github.com/leandro-pessoa)
 
  
 
