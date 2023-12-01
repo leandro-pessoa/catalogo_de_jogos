@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --gradient: linear-gradient(to right, rgb(48, 219, 48), rgb(122, 252, 122), rgb(194, 255, 188));
+}
+
+body{
+    background-color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+section.registro{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    gap: 15px;
+    width: 230px;
+    height: calc(100vh - 20px);
+}
+input{
+    outline: none;
+    background-color: white;
+    font-size: 1em;
+    border: none;
+    border-bottom: 3px solid rgb(163, 253, 163);
+    border-radius: 2px;
+    padding: 5px;
+}
+input:focus{
+    background-color: rgb(228, 228, 228);
+}
+button.cad{
+    font-size: 1.1em;
+    padding: 7px 20px;
+    border-radius: 20px;
+    border: none;
+    background: var(--gradient);
+    color: white;
+}
+button.cad:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.096);
+    transform: translate(-1px, -1px);
+    transition: transform .3s;
+}
+
+section.display{
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+}
+section.display div{
+    display: flex;
+    flex-direction: column wrap;
+    align-items: flex-start;
+}
+section.display h2{
+    font-weight: normal;
+    border-bottom: 2px solid rgb(165, 253, 165);
+    margin-bottom: 15px;
+}
+div.titulos{
+    display: flex;
+    justify-content: space-between;
+    width: 62%;
+    padding: 5px 10px;
+}
+div.titulos p{
+    border-left: 3px solid rgb(163, 253, 163);
+    padding-left: 3px;
+}
+section.display div.jogos{
+    display: flex;
+    flex-direction: column;
+    max-height: 310px;
+    overflow-y: auto;
+}
+section.display div.jogo{
+    display: grid;
+    grid-template-columns: 34% 28% 27% 15%;
+    font-size: 1.1em;
+    border-left: 3px solid rgb(163, 253, 163);
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    
+    width: 93%;
+}
+div.jogo span{
+    padding: 3px;
+    border-radius: 3px;
+}
+div.jogo span:hover{
+    background-color: #f1f1f1;
+    cursor: pointer;  
+}
+
+div.editScreen{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+div.editBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    width: 60%;
+    max-width: 500px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    padding: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(179, 179, 179);
+}
+div.editBox p {
+    text-align: center;
+}
+div.editBox input{
+    width: 80%;
+    background-color: #f1f1f1;
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px){
+    section.display div.jogo{
+        grid-template-columns: 34% 28% 25% 15%;
+    }
+    div.jogo p{
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main{
+        flex-direction: column;
+    }
+    section.registro{
+        width: calc(100% - 20px);
+        height: auto;
+        flex-direction: column;
+    }
+    input{
+        font-size: 0.95em;
+    }
+    button.cad{
+        font-size: 1em;
+    }
+    section.display{
+        margin-top: 30px;
+    }
+    div.jogo{
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 600px){
+    section.display div.jogo{
+        grid-template-columns: 34% 28% 25% 15%;
+    }
+    div.jogo p{
+        font-size: 0.80em;
+    }
+}
+@media screen and (max-width: 500px) {
+    div.jogo span svg{
+        width: 15px;
+    }
+    div.titulos p{
+        width: 5%;
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 420px) {
+    div.jogo span svg{
+        width: 10px;
+    }
+}
