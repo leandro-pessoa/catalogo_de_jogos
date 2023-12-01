@@ -13,6 +13,29 @@ O projeto consiste em um CRUD (Create, Read, Update, Delete) responsivo feito co
 
  ## ⬇️ Download do projeto
 
- Para baixar o projeto clique <a src='' download>aqui</a>
+ Para baixar o projeto clique <a src='https://github.com/leandro-pessoa/catalogo_de_jogos/archive/refs/heads/main.zip' download>aqui</a>
+
+ ## 🛠️ Executando o projeto
+
+ Para executar o projeto, você dever ter na sua máquina:
+
+ - Server local habilitado (Ex.: Wampserver)
+ - MySQL conectado ao server
+
+Agora, execute na pasta 'backend' o comando:
+
+~~~~
+node index
+~~~~
+
+E na pasta 'frontend/crud' o comando:
+
+~~~~
+npm run dev
+~~~~
+
+Por fim, abra o localhost na porta especificada no seu navegador.
+
+ 
 
 
