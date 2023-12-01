@@ -42,7 +42,7 @@ npm run dev
 
 Por fim, abra o localhost na porta especificada no seu navegador.
 
-## Tecnologias utilizadas
+## ⚛️ Tecnologias utilizadas
 
 Aqui estão as principais tecnologias utilizadas
 
@@ -53,7 +53,7 @@ Aqui estão as principais tecnologias utilizadas
 - `Typescript`
 - `Axios`
 
-## Desenvolvedor
+## :hurtrealbad: Desenvolvedor
 
 Desenvolvido por [Leandro Pessoa](https://github.com/leandro-pessoa)
 
